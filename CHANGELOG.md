@@ -1,6 +1,9 @@
 # Changelog
 ## [Unreleased]
 
+### 🚀 Features
+- Docs ([d8beec1](https://github.com/sguzman/pulsewire/commit/d8beec1eae761de1958eda8bfb0457b24e3f9b8c))## [0.2.0] - 2026-01-15
+
 ### ⚙️ Miscellaneous
 - License ([1905567](https://github.com/sguzman/pulsewire/commit/19055674fb9aca1872e33f9b400ca9cbe58d5dce))
 - Biome ([d253361](https://github.com/sguzman/pulsewire/commit/d2533612786930b617facfb8ddf41ec05095b8df))
