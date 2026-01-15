@@ -1,6 +1,9 @@
 # Changelog
 ## [Unreleased]
 
+### ⚙️ Miscellaneous
+- Readme ([5825615](https://github.com/sguzman/pulsewire/commit/5825615ddcf3f6c479fc290ccd31b6392bea69ff))## [1.0.0] - 2026-01-15
+
 ### 🚀 Features
 - Docs ([d8beec1](https://github.com/sguzman/pulsewire/commit/d8beec1eae761de1958eda8bfb0457b24e3f9b8c))## [0.2.0] - 2026-01-15
 
