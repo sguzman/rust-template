@@ -12,4 +12,5 @@ exclude = [
   "^http://localhost",
   "^https://img.shields.io/",
   "^mailto:",
+  "^https://github.com/sguzman/"
 ]
