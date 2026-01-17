@@ -1,6 +1,9 @@
 # Changelog
 ## [Unreleased]
 
+### 🚀 Features
+- Add context commands ([ec7894b](https://github.com/sguzman/pulsewire/commit/ec7894b64e7df7f37c14ab97180e011c2ea3c62d))## [1.0.1] - 2026-01-15
+
 ### ⚙️ Miscellaneous
 - Readme ([5825615](https://github.com/sguzman/pulsewire/commit/5825615ddcf3f6c479fc290ccd31b6392bea69ff))## [1.0.0] - 2026-01-15
 
