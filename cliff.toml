@@ -1,5 +1,9 @@
 # Configuration file for git-cliff
 # See: https://git-cliff.org/docs/configuration
+# Shared metadata and helpers keep git-cliff reusable across projects.
+[metadata]
+owner = "your-github-username"
+repo = "your-github-repo"
 
 [changelog]
 header = """
@@ -7,7 +11,9 @@ header = """
 """
 
 body = """
-{%- macro remote_url() -%}https://github.com/sguzman/pulsewire{%- endmacro -%}
+{%- set owner = metadata("owner", "your-github-username") -%}
+{%- set repo = metadata("repo", "rust-template") -%}
+{%- macro remote_url() -%}https://github.com/{{ owner }}/{{ repo }}{%- endmacro -%}
 
 {%- if version -%}
 ## [{{ version | trim_start_matches(pat="v") }}] - {{ timestamp | date(format="%Y-%m-%d") }}
