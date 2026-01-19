@@ -2,8 +2,8 @@
 # See: https://git-cliff.org/docs/configuration
 # Shared metadata and helpers keep git-cliff reusable across projects.
 [metadata]
-owner = "your-github-username"
-repo = "your-github-repo"
+owner = "sguzman"
+repo = "rust-template"
 
 [changelog]
 header = """
