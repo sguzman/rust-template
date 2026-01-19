@@ -1,6 +1,9 @@
 # Changelog
 ## [Unreleased]
 
+### 📚 Documentation
+- Add cliff workflow guide ([56e2c69](https://github.com/sguzman/rust-template/commit/56e2c69b58dbeaf613f2b9410944d727afc52519))## [1.1.8] - 2026-01-19
+
 ### ⚙️ Miscellaneous
 - Make git-cliff metadata-driven ([bf5100b](https://github.com/sguzman/rust-template/commit/bf5100b018e605b51fdacf947a6b86a4fad85390))
 - Require git-cliff metadata ([264d736](https://github.com/sguzman/rust-template/commit/264d736427643985891d59edb5adc24279fa7e39))
