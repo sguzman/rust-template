@@ -1,19 +1,21 @@
 # Configuration file for git-cliff
 # See: https://git-cliff.org/docs/configuration
-# Shared metadata and helpers keep git-cliff reusable across projects.
-# Set `owner`/`repo` in your project before running `git cliff`.
-[metadata]
-owner = "sguzman"
-repo = "rust-template"
-
+# GitHub repo details used in the changelog template.
+# Replace the TODO placeholders before running git-cliff on your project.
 [changelog]
 header = """
 # Changelog
 """
 
 body = """
-{%- set owner = metadata('owner') -%}
-{%- set repo = metadata('repo') -%}
+{%- set owner = "sguzman" -%}
+{%- set repo = "rust-template" -%}
+{%- if owner == "todo-github-owner" -%}
+{%- fail("Set the GitHub owner in cliff.toml before running git cliff") -%}
+{%- endif -%}
+{%- if repo == "todo-repo-name" -%}
+{%- fail("Set the GitHub repo name in cliff.toml before running git cliff") -%}
+{%- endif -%}
 {%- macro remote_url() -%}https://github.com/{{ owner }}/{{ repo }}{%- endmacro -%}
 
 {%- if version -%}
@@ -80,7 +82,8 @@ commit_parsers = [
 ]
 
 commit_preprocessors = [
-  { pattern = "\\((\\w+\\s)?#([0-9]+)\\)", replace = "([#${2}](https://github.com/sguzman/pulsewire/issues/${2}))" },
+  # Replace "todo-github-owner/todo-repo-name" above with your repo when customizing.
+  { pattern = "\\((\\w+\\s)?#([0-9]+)\\)", replace = "([#${2}](https://github.com/todo-github-owner/todo-repo-name/issues/${2}))" },
   { pattern = "^\\s*\\n", replace = "" },
 ]
 

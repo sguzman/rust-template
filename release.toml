@@ -4,7 +4,7 @@ pre-release-commit-message = "chore(release): prepare {{version}}"
 pre-release-hook = [
   "sh",
   "-c",
-  "root=$(git rev-parse --show-toplevel) && python3 \"$root/scripts/verify_cliff_metadata.py\" \"$root/cliff.toml\" && git -C \"$root\" cliff --config \"$root/cliff.toml\" --output \"$root/CHANGELOG.md\" && git -C \"$root\" add CHANGELOG.md",
+  "root=$(git rev-parse --show-toplevel) && git -C \"$root\" cliff --config \"$root/cliff.toml\" --output \"$root/CHANGELOG.md\" && git -C \"$root\" add CHANGELOG.md",
 ]
 publish = false
 shared-version = true
