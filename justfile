@@ -17,7 +17,6 @@ context-by-file:
 template dir:
 	cp -riv {{dir}}/docs .
 	cp -iv {{dir}}/*.toml .
-	cp -iv {{dir}}/justfile .
 	cp -iv {{dir}}/about.hbs .
 	cp -iv {{dir}}/biome.json .
 	cp -iv {{dir}}/.gitignore .
