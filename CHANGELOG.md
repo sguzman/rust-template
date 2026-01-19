@@ -1,6 +1,12 @@
 # Changelog
 ## [Unreleased]
 
+### 🐛 Bug Fixes
+- Dup copy ([8e2cca7](https://github.com/sguzman/rust-template/commit/8e2cca7d847821e26e2129c61fdaa33e53750ca0))
+
+### 🚀 Features
+- Template command ([2364c74](https://github.com/sguzman/rust-template/commit/2364c7487e20049b3bd3cbb631f5ae6ebb3fe5fc))## [1.2.0] - 2026-01-19
+
 ### 📚 Documentation
 - Add cliff workflow guide ([56e2c69](https://github.com/sguzman/rust-template/commit/56e2c69b58dbeaf613f2b9410944d727afc52519))## [1.1.8] - 2026-01-19
 
