@@ -20,6 +20,7 @@ template dir:
 	cp -iv {{dir}}/about.hbs .
 	cp -iv {{dir}}/biome.json .
 	cp -iv {{dir}}/.gitignore .
+	cp -iv {{dir}}/LICENSE .
 
 # Build
 build:
