@@ -2,19 +2,22 @@
 # See: https://git-cliff.org/docs/configuration
 # GitHub repo details used in the changelog template.
 # Replace the TODO placeholders before running git-cliff on your project.
+[remote.github]
+owner = "todo-github-owner"
+repo = "todo-repo-name"
 [changelog]
 header = """
 # Changelog
 """
 
 body = """
-{%- set owner = "sguzman" -%}
-{%- set repo = "rust-template" -%}
+{%- set owner = remote.github.owner -%}
+{%- set repo = remote.github.repo -%}
 {%- if owner == "todo-github-owner" -%}
-{%- fail("Set the GitHub owner in cliff.toml before running git cliff") -%}
+{{ throw(message="Set [remote.github].owner in cliff.toml before running git cliff") }}
 {%- endif -%}
 {%- if repo == "todo-repo-name" -%}
-{%- fail("Set the GitHub repo name in cliff.toml before running git cliff") -%}
+{{ throw(message="Set [remote.github].repo in cliff.toml before running git cliff") }}
 {%- endif -%}
 {%- macro remote_url() -%}https://github.com/{{ owner }}/{{ repo }}{%- endmacro -%}
 
