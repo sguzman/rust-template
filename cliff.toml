@@ -11,8 +11,14 @@ header = """
 """
 
 body = """
-{%- set owner = metadata("owner", "your-github-username") -%}
-{%- set repo = metadata("repo", "rust-template") -%}
+{%- if not metadata.owner -%}
+{%- fail("cliff metadata key \"owner\" is required") -%}
+{%- endif -%}
+{%- if not metadata.repo -%}
+{%- fail("cliff metadata key \"repo\" is required") -%}
+{%- endif -%}
+{%- set owner = metadata.owner -%}
+{%- set repo = metadata.repo -%}
 {%- macro remote_url() -%}https://github.com/{{ owner }}/{{ repo }}{%- endmacro -%}
 
 {%- if version -%}
