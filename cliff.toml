@@ -12,8 +12,8 @@ header = """
 """
 
 body = """
-{%- set owner = metadata.owner -%}
-{%- set repo = metadata.repo -%}
+{%- set owner = metadata('owner') -%}
+{%- set repo = metadata('repo') -%}
 {%- macro remote_url() -%}https://github.com/{{ owner }}/{{ repo }}{%- endmacro -%}
 
 {%- if version -%}
