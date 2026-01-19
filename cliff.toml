@@ -3,8 +3,8 @@
 # GitHub repo details used in the changelog template.
 # Replace the TODO placeholders before running git-cliff on your project.
 [remote.github]
-owner = ""
-repo = ""
+owner = "sguzman"
+repo = "rust-template"
 [changelog]
 header = """
 # Changelog
