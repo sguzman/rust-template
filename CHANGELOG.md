@@ -2,6 +2,13 @@
 ## [Unreleased]
 
 ### 🐛 Bug Fixes
+- Copy over license file ([010a9af](https://github.com/sguzman/rust-template/commit/010a9afbf594542653bc3a5944f88c688bbed707))
+
+### 📚 Documentation
+- Mandate latest dependency policy ([7b3e444](https://github.com/sguzman/rust-template/commit/7b3e444665513574da21a0079abc73434ce73c87))
+- Libs ([3c16fc5](https://github.com/sguzman/rust-template/commit/3c16fc566bbf46927d3e66af1a5ccdc3881a1557))## [1.2.1] - 2026-01-19
+
+### 🐛 Bug Fixes
 - Dup copy ([8e2cca7](https://github.com/sguzman/rust-template/commit/8e2cca7d847821e26e2129c61fdaa33e53750ca0))
 
 ### 🚀 Features
