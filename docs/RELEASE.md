@@ -45,9 +45,11 @@ cargo release patch --workspace
 Notes:
 - `publish = false` in `release.toml` so crates are not published.
 - `pre-release-hook` runs git-cliff to generate CHANGELOG.md for every release.
+- `pre-release-hook` now runs `scripts/verify_cliff_metadata.py` before `git-cliff` to ensure owner/repo metadata is configured.
 
 ## Files
 
 - `cliff.toml` – git-cliff config
+- `scripts/verify_cliff_metadata.py` – helper run during release prep that exits if `cliff.toml` lacks owner/repo metadata
 - `release.toml` – cargo-release config
 - `CHANGELOG.md` – generated changelog (optional until first release)

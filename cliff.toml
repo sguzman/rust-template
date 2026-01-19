@@ -1,6 +1,7 @@
 # Configuration file for git-cliff
 # See: https://git-cliff.org/docs/configuration
 # Shared metadata and helpers keep git-cliff reusable across projects.
+# Set `owner`/`repo` in your project before running `git cliff`.
 [metadata]
 owner = "sguzman"
 repo = "rust-template"
@@ -11,12 +12,6 @@ header = """
 """
 
 body = """
-{%- if not metadata.owner -%}
-{%- fail("cliff metadata key \"owner\" is required") -%}
-{%- endif -%}
-{%- if not metadata.repo -%}
-{%- fail("cliff metadata key \"repo\" is required") -%}
-{%- endif -%}
 {%- set owner = metadata.owner -%}
 {%- set repo = metadata.repo -%}
 {%- macro remote_url() -%}https://github.com/{{ owner }}/{{ repo }}{%- endmacro -%}
