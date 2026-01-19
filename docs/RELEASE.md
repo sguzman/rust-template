@@ -45,7 +45,7 @@ cargo release patch --workspace
 Notes:
 - `publish = false` in `release.toml` so crates are not published.
 - `pre-release-hook` runs git-cliff to generate CHANGELOG.md for every release.
-- `cliff.toml` ships with `[remote.github]` `owner`/`repo` placeholders; update them (and the issue-link replace URL) so changelog links point to the right project before running `git cliff`.
+- `cliff.toml` expects `[remote.github]` `owner`/`repo` to be set (and the issue-link replace URL updated) so changelog links point to the right project before running `git cliff`.
 
 ## Files
 

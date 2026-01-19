@@ -3,20 +3,20 @@
 # GitHub repo details used in the changelog template.
 # Replace the TODO placeholders before running git-cliff on your project.
 [remote.github]
-owner = "todo-github-owner"
-repo = "todo-repo-name"
+owner = ""
+repo = ""
 [changelog]
 header = """
 # Changelog
 """
 
 body = """
-{%- set owner = remote.github.owner -%}
-{%- set repo = remote.github.repo -%}
-{%- if owner == "todo-github-owner" -%}
+{%- set owner = remote.github.owner | default(value="") -%}
+{%- set repo = remote.github.repo | default(value="") -%}
+{%- if owner == "" -%}
 {{ throw(message="Set [remote.github].owner in cliff.toml before running git cliff") }}
 {%- endif -%}
-{%- if repo == "todo-repo-name" -%}
+{%- if repo == "" -%}
 {{ throw(message="Set [remote.github].repo in cliff.toml before running git cliff") }}
 {%- endif -%}
 {%- macro remote_url() -%}https://github.com/{{ owner }}/{{ repo }}{%- endmacro -%}
@@ -85,8 +85,8 @@ commit_parsers = [
 ]
 
 commit_preprocessors = [
-  # Replace "todo-github-owner/todo-repo-name" above with your repo when customizing.
-  { pattern = "\\((\\w+\\s)?#([0-9]+)\\)", replace = "([#${2}](https://github.com/todo-github-owner/todo-repo-name/issues/${2}))" },
+  # Keep this URL in sync with [remote.github] above.
+  { pattern = "\\((\\w+\\s)?#([0-9]+)\\)", replace = "([#${2}](https://github.com/OWNER/REPO/issues/${2}))" },
   { pattern = "^\\s*\\n", replace = "" },
 ]
 
