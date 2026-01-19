@@ -9,6 +9,7 @@ share the same baseline from day one.
 - Provide a clean starting point for a binary crate.
 - Keep the project layout small and easy to extend.
 - Standardize formatting, linting, and release workflows.
+- Enforce a dependency policy: always update dependencies to their latest stable release before committing or releasing.
 
 ## Repository structure
 
@@ -24,3 +25,4 @@ share the same baseline from day one.
 1. Update `Cargo.toml` with your crate name and metadata.
 2. Replace `src/main.rs` with your application.
 3. Run `cargo build` to verify the toolchain.
+4. Run `cargo outdated` or equivalent to confirm you are on the latest compatible library versions before releasing.
