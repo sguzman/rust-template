@@ -41,3 +41,7 @@ Add multiple entries for runtime, build, test, or tooling dependencies. Explain 
 - **Validation steps**: describe how you know the reference features are working (assertions, schema checks, e2e flows).
 
 Keep this document updated every time a new reference project is added; it is the ground truth that the migration work will follow.
+
+## Attribution
+
+- Every migration must include a short “thanks to” or “reference” field—either in the new README, docs, or release notes—acknowledging the original project that inspired the port. Record the original repository/project name and a sentence about what you borrowed so that future readers understand the lineage.
