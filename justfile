@@ -13,6 +13,21 @@ context-by-file:
 	files-to-prompt --ignore target/ --ignore .git/ --markdown --line-numbers --extension toml . > ~/Downloads/toml.txt
 	files-to-prompt --ignore target/ --ignore .git/ --markdown --line-numbers --extension yaml --extension yml . > ~/Downloads/yaml.txt
 
+major:
+	cargo release major --verbose --workspace --execute --no-publish --no-push --no-confirm
+	git push
+	git push --tags
+
+minor:
+	cargo release minor --verbose --workspace --execute --no-publish --no-push --no-confirm
+	git push
+	git push --tags
+
+patch:
+	cargo release patch --verbose --workspace --execute --no-publish --no-push --no-confirm
+	git push
+	git push --tags
+
 # Copy over template files
 template dir:
 	cp -riv {{dir}}/docs .
