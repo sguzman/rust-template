@@ -13,13 +13,17 @@ extend-exclude = [
   "CHANGELOG.md",
   "dist/**",
   "docs/THIRD_PARTY_LICENSES.md",
+  "docs/migration/*-DeepWiki.md",
+  "examples/**",
   "node_modules/**",
   "target/**",
+  "tests/fixtures/**",
   "vendor/**",
 ]
 
 [default.extend-words]
 # domain-specific tokens, names, abbreviations, etc.
+"opf"      = "opf"
 "quickwit" = "quickwit"
 "ratatui"  = "ratatui"
 "serde"    = "serde"

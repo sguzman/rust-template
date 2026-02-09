@@ -2,3 +2,5 @@
 tmp
 *.log
 *.db
+.lycheecache
+.rumdl_cache

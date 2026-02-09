@@ -10,7 +10,15 @@ cache = true
 exclude = [
   "^http://127.0.0.1",
   "^http://localhost",
+  "^https://github.com/sguzman/",
   "^https://img.shields.io/",
   "^mailto:",
-  "^https://github.com/sguzman/"
+]
+
+# Ignore a specific markdown file by path
+exclude_path = [
+  "docs/migration/.*-DeepWiki.md",
+  "examples/",
+  "new-project/",
+  "tests/",
 ]
